@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="default"
+		module="trainingscala$sbt_2.12"
+		revision="0.1"
+		status="integration"
+		publication="20180810080819"
+	/>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-sbt" name="sbt" rev="1.2.1" conf="compile->default(compile)"/>
+		<dependency org="com.thesamet" name="sbt-protoc" rev="0.99.18" conf="compile->default(compile)" scalaVersion="2.12" sbtVersion="1.0"/>
+		<dependency org="com.github.os72" name="protoc-jar" rev="3.5.1" conf="compile->default(compile)"/>
+		<dependency org="com.thesamet.scalapb" name="protoc-bridge_2.12" rev="0.7.3" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.6" conf="compile->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.12.6/"/>
+		<dependency org="com.thesamet.scalapb" name="compilerplugin_2.12" rev="0.7.4" conf="compile->default(compile)"/>
+		<dependency org="com.google.protobuf" name="protobuf-java" rev="3.5.1" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>

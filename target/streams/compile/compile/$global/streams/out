@@ -1,0 +1,12 @@
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/trainingScala/src/main/scala/repository/BookRepository.scala:38:8: object creation impossible, since:[0m
+[0m[[0m[31merror[0m] [0m[0mit has 4 unimplemented members.[0m
+[0m[[0m[31merror[0m] [0m[0m/** As seen from object BookRepository, the missing signatures are as follows.[0m
+[0m[[0m[31merror[0m] [0m[0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[0m[31merror[0m] [0m[0m */[0m
+[0m[[0m[31merror[0m] [0m[0m  def deleteBook(book: entities.Book): Unit = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def saveBook(book: entities.Book): Unit = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def searchBook(isbn: String): Unit = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def updateBook(book: entities.Book): Unit = ???[0m
+[0m[[0m[31merror[0m] [0m[0mobject BookRepository extends BookRepositoryAlg[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

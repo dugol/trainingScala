@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/trainingscala.iml" filepath="$PROJECT_DIR$/.idea/modules/trainingscala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/trainingscala-build.iml" filepath="$PROJECT_DIR$/.idea/modules/trainingscala-build.iml" />
     </modules>
   </component>
 </project>
