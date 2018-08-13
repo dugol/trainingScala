@@ -3,11 +3,13 @@ package services
 import entities.Book
 import repository.BookRepository
 
+import scala.concurrent.Future
+
 sealed trait BookServiceAlg{
   def createBook(book:Book)
   def deleteBook(book:Book)
   def updateBook(book:Book)
-  def searchBook(isbn:String)
+  def searchBook(isbn:String):Future[Option[Book]]
 }
 sealed trait BookService extends BookServiceAlg{
   override def createBook(book: Book): Unit = {
@@ -22,7 +24,7 @@ sealed trait BookService extends BookServiceAlg{
     BookRepository.updateBook(book)
   }
 
-  override def searchBook(isbn: String): Unit = {
+  override def searchBook(isbn: String): Future[Option[Book]] = {
     BookRepository.searchBook(isbn)
   }
 }

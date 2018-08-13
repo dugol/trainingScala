@@ -4,7 +4,7 @@
 		module="trainingscala$sbt_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20180810080819"
+		publication="20180813161952"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -21,7 +21,8 @@
 		<dependency org="com.github.os72" name="protoc-jar" rev="3.5.1" conf="compile->default(compile)"/>
 		<dependency org="com.thesamet.scalapb" name="protoc-bridge_2.12" rev="0.7.3" conf="compile->default(compile)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.6" conf="compile->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.12.6/"/>
-		<dependency org="com.thesamet.scalapb" name="compilerplugin_2.12" rev="0.7.4" conf="compile->default(compile)"/>
-		<dependency org="com.google.protobuf" name="protobuf-java" rev="3.5.1" conf="compile->default(compile)"/>
+		<dependency org="com.trueaccord.scalapb" name="compilerplugin_2.12" rev="0.6.7" conf="compile->default(compile)"/>
+		<dependency org="com.trueaccord.scalapb" name="protoc-bridge_2.12" rev="0.3.0-M1" conf="compile->default(compile)"/>
+		<dependency org="com.google.protobuf" name="protobuf-java" rev="3.4.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

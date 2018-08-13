@@ -1,25 +1,27 @@
 name := "trainingScala"
 
-/*
+
+
+
 PB.targets in Compile := Seq(
   scalapb.gen() -> (sourceManaged in Compile).value
 )
-*/
+
 version := "0.1"
 
 scalaVersion := "2.12.6"
 
-//val grpcJavaVersion = com.trueaccord.scalapb.compiler.Version.grpcJavaVersion
-//val scalapbVersion = com.trueaccord.scalapb.compiler.Version.scalapbVersion
+val grpcJavaVersion = com.trueaccord.scalapb.compiler.Version.grpcJavaVersion
+val scalapbVersion = com.trueaccord.scalapb.compiler.Version.scalapbVersion
 
-/*val grpcDependencies = Seq(
+val grpcDependencies = Seq(
   "io.grpc"                    % "grpc-netty"                            % grpcJavaVersion,
   "io.grpc"                    % "grpc-protobuf"                         % grpcJavaVersion,
   "com.trueaccord.scalapb"     %% "scalapb-runtime-grpc"                 % scalapbVersion,
   "com.trueaccord.scalapb"     %% "scalapb-runtime"                      % scalapbVersion % "protobuf",
   "com.google.api.grpc"        % "proto-google-common-protos"            % "0.1.13"
 )
-*/
+
 
 val cassandraDependencies = Seq(
   "com.outworkers"             %% "phantom-dsl"                          % "2.13.5",
@@ -36,7 +38,5 @@ val commonDependencies = Seq(
   "org.scalatest" % "scalatest_2.12" % "3.0.0" % "test"
 )
 
-//libraryDependencies ++= commonDependencies ++ grpcDependencies ++ cassandraDependencies ++ kafkaDependencies
-libraryDependencies ++= cassandraDependencies
-libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+libraryDependencies ++= commonDependencies ++ grpcDependencies ++ cassandraDependencies ++ kafkaDependencies
+

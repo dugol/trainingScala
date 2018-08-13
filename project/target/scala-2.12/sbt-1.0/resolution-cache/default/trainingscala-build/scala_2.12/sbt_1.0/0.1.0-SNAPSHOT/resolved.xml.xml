@@ -4,7 +4,7 @@
 		module="trainingscala-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180808171116"
+		publication="20180813082443"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
@@ -35,7 +35,7 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.6" conf="scala-tool->default,optional(default);provided->default(compile)"/>
 		<dependency org="org.scala-sbt" name="sbt" rev="1.2.1" conf="provided->default(compile)"/>
 		<dependency org="com.thesamet" name="sbt-protoc" rev="0.99.18" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
-		<dependency org="com.thesamet.scalapb" name="compilerplugin_2.12" rev="0.7.4" conf="compile->default(compile)"/>
+		<dependency org="com.trueaccord.scalapb" name="compilerplugin_2.12" rev="0.6.7" conf="compile->default(compile)"/>
 		<override org="org.scala-sbt" module="scripted-plugin_2.12" matcher="exact" rev="1.2.1"/>
 	</dependencies>
 </ivy-module>
